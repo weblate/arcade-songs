@@ -125,7 +125,10 @@ export default function useGameData() {
     const url = new URL('https://www.youtube.com/results');
     url.searchParams.set(
       'search_query',
-      `${escapedGameTitle} ${escapedTitle} ${escapedDifficulty}`.replaceAll('-', '\\-'),
+      `${escapedGameTitle} ${escapedTitle} ${escapedDifficulty}`
+        .replaceAll('-', '\\-')
+        .replaceAll(/([!])\1{3,}/g, (_, $1) => $1.repeat(3))
+      ,
     );
 
     return url.toString();
