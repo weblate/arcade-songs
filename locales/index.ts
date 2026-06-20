@@ -11,6 +11,8 @@ const locales: LocaleObject[] = [
   { code: 'vi', iso: 'vi', abbr: 'vi', name: 'Tiếng Việt', file: 'vi.yaml' },
   // Indonesian
   { code: 'id', iso: 'id', abbr: 'id', name: 'Bahasa Indonesia', file: 'id.yaml' },
+  // Tamil
+  // { code: 'ta', iso: 'ta', abbr: 'ta', name: 'தமிழ்', file: 'ta.yaml' },
   // Japanese
   { code: 'ja', iso: 'ja', abbr: 'ja', name: '日本語', file: 'ja.yaml' },
   // Korean
